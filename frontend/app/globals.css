@@ -1,0 +1,352 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+/* Updated color scheme to include wood tones */
+:root {
+  --background: #fcefe5;
+  --foreground: #2d1d18;
+  --card: #fff7f1;
+  --card-foreground: oklch(0.25 0.02 40);
+  --popover: #fff7f1;
+  --popover-foreground: oklch(0.25 0.02 40);
+  --primary: #542d1b;
+  --primary-foreground: oklch(0.98 0.01 55);
+  --secondary: #e7d3c9;
+  --secondary-foreground: oklch(0.25 0.02 40);
+  --muted: #e9dbd2;
+  --muted-foreground: oklch(0.45 0.03 45);
+  --accent: #863e2c;
+  --accent-foreground: oklch(0.98 0.01 55);
+  --destructive: #cf001c;
+  --destructive-foreground: oklch(0.98 0.005 85);
+  --border: #d0bcb2;
+  --input: #d0bcb2;
+  --ring: #684f43;
+  --wood-light: #b2836e;
+  --wood-medium: #854027;
+  --wood-dark: #492116;
+  --chart-1: #ce5200;
+  --chart-2: #006c65;
+  --chart-3: #045471;
+  --chart-4: #c49900;
+  --chart-5: #c68600;
+  --radius: 8px;
+  --sidebar: #fafafa;
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.08 0.01 85);
+  --foreground: oklch(0.98 0.005 85);
+  --card: oklch(0.12 0.01 85);
+  --card-foreground: oklch(0.98 0.005 85);
+  --popover: oklch(0.12 0.01 85);
+  --popover-foreground: oklch(0.98 0.005 85);
+  --primary: oklch(0.98 0.005 85);
+  --primary-foreground: oklch(0.15 0.01 85);
+  --secondary: oklch(0.18 0.01 85);
+  --secondary-foreground: oklch(0.98 0.005 85);
+  --muted: oklch(0.18 0.01 85);
+  --muted-foreground: oklch(0.55 0.01 85);
+  --accent: oklch(0.75 0.015 85);
+  --accent-foreground: oklch(0.08 0.01 85);
+  --destructive: oklch(0.396 0.141 25.723);
+  --destructive-foreground: oklch(0.98 0.005 85);
+  --border: oklch(0.22 0.01 85);
+  --input: oklch(0.22 0.01 85);
+  --ring: oklch(0.55 0.01 85);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(0.269 0 0);
+  --sidebar-ring: oklch(0.439 0 0);
+}
+
+@theme inline {
+  --font-sans: "Vazirmatn", "Tahoma", sans-serif;
+  --font-mono: "Vazirmatn", "Tahoma", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --color-wood-light: var(--wood-light);
+  --color-wood-medium: var(--wood-medium);
+  --color-wood-dark: var(--wood-dark);
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+
+  /* Added smooth slow-motion scrolling and hidden scrollbar */
+  html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  html::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  html {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  /* </CHANGE> */
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  /* Replaced float animations with rain animation for book icons */
+  /* Updated rain animations to tilt by 25 degrees */
+  @keyframes rain {
+    0% {
+      transform: translateY(-100px) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.7;
+    }
+    90% {
+      opacity: 0.7;
+    }
+    100% {
+      transform: translateY(100vh) translateX(46.6vh) rotate(10deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes rain-delayed {
+    0% {
+      transform: translateY(-100px) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.6;
+    }
+    90% {
+      opacity: 0.6;
+    }
+    100% {
+      transform: translateY(100vh) translateX(46.6vh) rotate(-8deg);
+      opacity: 0;
+    }
+  }
+
+  @keyframes rain-slow {
+    0% {
+      transform: translateY(-100px) translateX(0) rotate(0deg);
+      opacity: 0;
+    }
+    10% {
+      opacity: 0.5;
+    }
+    90% {
+      opacity: 0.5;
+    }
+    100% {
+      transform: translateY(100vh) translateX(46.6vh) rotate(5deg);
+      opacity: 0;
+    }
+  }
+  /* </CHANGE> */
+
+  .animate-rain {
+    animation: rain 8s linear infinite;
+  }
+
+  .animate-rain-delayed {
+    animation: rain-delayed 10s linear infinite;
+    animation-delay: 2s;
+  }
+
+  .animate-rain-slow {
+    animation: rain-slow 12s linear infinite;
+    animation-delay: 4s;
+  }
+
+  @keyframes pulse-slow {
+    0%,
+    100% {
+      opacity: 0.3;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.5;
+      transform: scale(1.1);
+    }
+  }
+
+  @keyframes pulse-slower {
+    0%,
+    100% {
+      opacity: 0.2;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.4;
+      transform: scale(1.15);
+    }
+  }
+
+  @keyframes shimmer {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  @keyframes shimmer-delayed {
+    0% {
+      opacity: 0;
+      transform: translateX(-100%);
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+  }
+
+  .animate-pulse-slow {
+    animation: pulse-slow 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-slower {
+    animation: pulse-slower 8s ease-in-out infinite;
+    animation-delay: 2s;
+  }
+
+  .animate-shimmer {
+    animation: shimmer 8s ease-in-out infinite;
+  }
+
+  .animate-shimmer-delayed {
+    animation: shimmer-delayed 8s ease-in-out infinite;
+    animation-delay: 4s;
+  }
+
+  .wood-texture {
+    background-image: repeating-linear-gradient(
+        90deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.03) 2px,
+        rgba(0, 0, 0, 0.03) 4px
+      ), repeating-linear-gradient(0deg, transparent, transparent 2px, rgba(0, 0, 0, 0.02) 2px, rgba(0, 0, 0, 0.02) 4px);
+  }
+
+  @keyframes flicker {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 0.45;
+    }
+  }
+
+  .burned-edge-left {
+    animation: flicker 4s ease-in-out infinite;
+  }
+
+  .burned-edge-right {
+    animation: flicker 5s ease-in-out infinite;
+    animation-delay: 1s;
+  }
+
+  /* Added SVG drawing animation */
+  @keyframes draw {
+    to {
+      stroke-dashoffset: 0;
+    }
+  }
+
+  /* Updated to animate all paths with proper delays */
+  .svg-drawing-animation path {
+    stroke-dasharray: 2000;
+    stroke-dashoffset: 2000;
+    animation: draw 15s ease-out forwards;
+  }
+
+  /* Stagger animation delays for each path */
+  .svg-drawing-animation path:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .svg-drawing-animation path:nth-child(2) {
+    animation-delay: 0.5s;
+  }
+  .svg-drawing-animation path:nth-child(3) {
+    animation-delay: 1s;
+  }
+  .svg-drawing-animation path:nth-child(4) {
+    animation-delay: 1.5s;
+  }
+  .svg-drawing-animation path:nth-child(5) {
+    animation-delay: 2s;
+  }
+  /* </CHANGE> */
+}

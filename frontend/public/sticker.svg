@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" viewBox="0 0 1200 1200">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+        opacity: .03;
+      }
+
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 0px;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient-2);
+        mix-blend-mode: multiply;
+        opacity: .13;
+      }
+
+      .cls-4 {
+        isolation: isolate;
+      }
+
+      .cls-3 {
+        fill: #c4b289;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="3181.73" y1="965.36" x2="2927.85" y2="711.48" gradientTransform="translate(3430.93) rotate(-180) scale(1 -1)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".77" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="601.25" y1="385.4" x2="601.25" y2="240.61" gradientUnits="userSpaceOnUse">
+      <stop offset=".29" stop-color="#000"/>
+      <stop offset=".57" stop-color="#000" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <g class="cls-4">
+    <g id="Graphic_element" data-name="Graphic element">
+      <g>
+        <g>
+          <path class="cls-3" d="M267.8,926.64c42.54,56.2,720.61,7.07,720.61,7.07-27-165.18-18.32-446.92-18.68-684.13H236.13s-2.86,32.78-3.06,83.95c-.68,171.44,1.63,549.37,34.73,593.1Z"/>
+          <path class="cls-1" d="M268.43,547.46c93.58,80.73,187.89,160.64,278.74,244.14,44.27,40.69,87.19,82.94,132.54,122.54,16.03,14,36.03,18.89,52.51,32.51-193.45,5.12-439.77,13.14-465.02-20.21-23.7-31.32-31.62-233.96-33.95-409.46,11.7,10.19,23.43,20.35,35.18,30.49Z"/>
+        </g>
+        <polygon class="cls-2" points="233.37 335.72 968.53 305.1 969.13 249.38 236.13 249.58 233.37 335.72"/>
+      </g>
+    </g>
+  </g>
+</svg>
