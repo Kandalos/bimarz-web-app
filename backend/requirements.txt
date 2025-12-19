@@ -1,3 +1,6 @@
+django_redis
+psycopg2
+gunicorn
 anyio==4.12.0
 asgiref==3.10.0
 build==1.3.0

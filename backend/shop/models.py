@@ -42,7 +42,7 @@ class Book(models.Model):
     stock = models.IntegerField(default=0, help_text=_("Current number of units in stock."))
     genres = models.ManyToManyField(Genre, related_name='books', blank=True)
     year = models.CharField(null=True , blank =True)
-    pages=models.CharField(max_length=4)
+    pages=models.CharField(max_length=4, blank =True, null=True)
     
     cover_image = models.ImageField(
         upload_to='book_covers/',
