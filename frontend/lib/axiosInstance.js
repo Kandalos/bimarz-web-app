@@ -1,8 +1,8 @@
-// frontend/lib/axiosInstance.js
 import axios from 'axios';
 
-const API_BASE_URL = 'http://127.0.0.1:8000/api/'; // use one canonical host
-
+const API_BASE_URL = process.env.NODE_ENV === 'production'
+  ? 'https://bimarz.org/api'
+  : 'http://backend:8000/api';
 const axiosInstance = axios.create({
   baseURL: API_BASE_URL,
   headers: {

@@ -291,11 +291,12 @@ export function HeroSection() {
                 <img src="/logo.svg" alt="cafe schalpate" className="w-24 h-24 relative z-10" />
               </div>
               <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight mb-8 text-balance leading-[1.2] text-wood-dark">
-               اولین کافه‌کتاب ایرانی در اروپا
+           شالپلاته؛   
+              </h1>
+              <h1 className="text-4xl md:text-4xl lg:text-5xl font-bold tracking-tight mb-8 text-balance leading-[1.2] text-wood-dark">
+                پاتوق ایرانی‌ها و کتاب‌خوان‌ها در قلب اروپا.
               </h1>
               <p className="text-base md:text-lg text-wood-dark/70 max-w-xl mx-auto leading-relaxed text-pretty">
-               شالپلاته؛ پاتوق ایرانی‌ها و کتاب‌خوان‌ها در قلب اروپا.
-
                قهوه‌ در کنار کتاب‌های دوست‌داشتنی و میزهایی که همیشه برای یک گفت‌وگوی تازه آماده‌اند.
                اینجا حس خانه می‌دهد؛ هم برای خواندن، هم برای گپ‌وگفت
               </p>
