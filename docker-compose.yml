@@ -7,7 +7,7 @@ services:
     environment:
       POSTGRES_DB: bimarz_db
       POSTGRES_USER: bimarz_user
-      POSTGRES_PASSWORD: _a|$2wXjJleA
+      POSTGRES_PASSWORD: 
     volumes:
       - postgres_data:/var/lib/postgresql/data/
     networks:
@@ -37,14 +37,14 @@ services:
     restart: unless-stopped
     environment:
       - DEBUG=False
-      - SECRET_KEY=Pv3Bt#UhZ7f!hdjzmL^hbI,rk:"&$1X%m+Zh=ck":C2H;M5/oB6d0CN!EtSwxQ
+      - SECRET_KEY=${SECRET_KEY}
       - DB_NAME=bimarz_db
       - DB_USER=bimarz_user
-      - DB_PASSWORD=_a|$2wXjJleA
+      - DB_PASSWORD=
       - DB_HOST=db
       - DB_PORT=5432
-      - REDIS_URL=redis://:X%k0c2t3o7@redis:6379/0
-      - ALLOWED_HOSTS=backend,localhost,127.0.0.1,bimarz.org,www.bimarz.org,217.154.145.62
+      - REDIS_URL=redis://${REDIS_PASSWORD}@redis:6379/0
+      - ALLOWED_HOSTS=backend,localhost,127.0.0.1,bimarz.org,www.bimarz.org,vps_ip_address
       - DOCKER_ENV=True
     depends_on:
       - db
