@@ -179,7 +179,7 @@ Contributions are welcome! To propose fixes or improvements:
 #Project Architecture Diagram
 
 ```
-
+```
 ```
                                     +----------------+
                                     |   bimarz.org   |
