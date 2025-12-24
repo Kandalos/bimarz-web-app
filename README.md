@@ -79,7 +79,7 @@ Install:
 ### Clone
 
 ```bash
-git clone https://github.com/<username>/bimarz.git
+git clone https://github.com/Kandalos/bimarz.git
 cd bimarz
 ````
 
