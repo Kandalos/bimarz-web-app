@@ -39,6 +39,7 @@ class BookSerializer(serializers.ModelSerializer):
             "book_size",
             "year",
             "pages",
+            "publisher",
         )
         read_only_fields = ("id","sold_count")
 

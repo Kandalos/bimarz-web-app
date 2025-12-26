@@ -89,13 +89,29 @@ export default function ContactPage() {
                   <MapPin className="w-6 h-6 text-wood-medium shrink-0" />
                   <p>
                     Café Schallplatte  
-                    <br />
+                    
                     Scheidtweilerstr. 9  
-                    <br />
+                   
                     50933 Cologne
                   </p>
                 </div>
-
+                <div className="flex gap-4">
+                  <MapPin className="w-6 h-6 text-wood-medium shrink-0" />
+                  <div>
+                    <p>
+                      Café Schallplatte<br />
+                      Scheidtweilerstr. 9<br />
+                      50933 Cologne
+                    </p>
+                    <p>
+                      Öffnungszeiten:<br />
+                      Mo-Fr 10:00-19:00 Uhr<br />
+                      Sa 10:00-17:00 Uhr<br />
+                      So Nach Vereinbarung
+                    </p>
+                  </div>
+                </div>
+                
                 <div className="flex gap-4">
                   <Phone className="w-6 h-6 text-wood-medium shrink-0" />
                   <div dir="ltr">

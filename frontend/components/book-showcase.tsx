@@ -47,11 +47,10 @@ export function BookShowcase() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight mb-4 text-balance">
-            انتشارات اخیر
+            تازه‌های تشر 
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            دستاوردهای ادبی جدید ما را کشف کنید
-          </p>
+تازه‌ها در کافه کتاب‌ شالپلاته          </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 lg:gap-16">

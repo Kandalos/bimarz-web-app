@@ -5,7 +5,7 @@ import axiosInstance from "@/lib/axiosInstance";
 
 async function getMostBoughtBooks() {
   try {
-    const response = await axiosInstance.get("v1/shop/books/most-bought/");
+    const response = await axiosInstance.get("v1/shop/books/recommended/most-bought/");
     return response.data.books || [];
   } catch (error) {
     console.error("Failed to fetch most bought books:", error);
@@ -25,7 +25,7 @@ export async function MostBoughtBooksSection() {
           <div className="flex items-center justify-center gap-3 mb-4">
             <TrendingUp className="w-8 h-8 text-wood-medium" />
             <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold tracking-tight text-wood-dark">
-              پرفروش‌ترین کتاب‌ها
+              داغ‌ترین کتاب‌ها
             </h2>
           </div>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -54,7 +54,7 @@ export async function MostBoughtBooksSection() {
                   <h3 className="font-bold text-base text-wood-dark mb-1 line-clamp-1">{book.title}</h3>
                   <p className="text-sm text-muted-foreground mb-3 line-clamp-1">{book.author}</p>
                   <div className="flex justify-between items-center">
-                    <span className="text-lg font-bold text-wood-medium">{book.price} تومان</span>
+                    <span className="text-lg font-bold text-wood-medium">{book.price} یورو</span>
                   </div>
                 </div>
               </div>

@@ -5,7 +5,7 @@ import axiosInstance from "@/lib/axiosInstance";
 
 async function getRecommendedBooks() {
   try {
-    const response = await axiosInstance.get("v1/shop/books/recommended/");
+    const response = await axiosInstance.get("v1/shop/books/recommended/recommended");
     return response.data.books || [];
   } catch (error) {
     console.error("Failed to fetch recommended books:", error);
@@ -22,11 +22,10 @@ export async function RecommendedBooksSection() {
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4 text-wood-dark">
-            کتاب‌های پیشنهادی ما
+           پیشنهادی ما
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            برگزیده‌های ویژه که نباید از دست بدهید
-          </p>
+بگو چی خوندی؟ تا بگم چی بخونی!          </p>
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">

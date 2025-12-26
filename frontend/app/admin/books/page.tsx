@@ -46,6 +46,7 @@ type Book = {
   year?: number
   book_size?: string
   translator?: string | null
+  publisher?: string | null
   description?: string
   cover_image?: string | null
   cover?: string | null
@@ -206,6 +207,7 @@ export default function AdminPage() {
       price: b.price,
       stock: b.stock,
       translator: b.translator,
+      publisher: b.publisher,
       book_size: b.book_size,
       genre: b.genre,
       cover: b.cover_image || "",
@@ -295,6 +297,7 @@ export default function AdminPage() {
       appendIf("translator", bookFormData.translator)
       appendIf("genre", bookFormData.genre)
       appendIf("book_size", bookFormData.book_size)
+      appendIf("publisher", bookFormData.publisher)
 
       // OPTIONAL NUMBERS
       appendIf("price", bookFormData.price)
@@ -513,6 +516,19 @@ export default function AdminPage() {
                           placeholder="نام مترجم را وارد کنید"
                           className="border-wood-light focus:border-wood-medium"
                           value={bookFormData.translator || ""}
+                          onChange={handleBookFormChange}
+                        />
+                      </div>
+
+                      <div>
+                        <Label htmlFor="publisher" className="text-wood-dark font-bold mb-2 block">
+                          ناشر
+                        </Label>
+                        <Input
+                          id="publisher"
+                          placeholder="نام ناشر را وارد کنید"
+                          className="border-wood-light focus:border-wood-medium"
+                          value={bookFormData.publisher || ""}
                           onChange={handleBookFormChange}
                         />
                       </div>

@@ -56,7 +56,7 @@ class Book(models.Model):
     genres = models.ManyToManyField(Genre, related_name='books', blank=True)
     year = models.CharField(null=True , blank =True)
     pages=models.CharField(max_length=4, blank =True, null=True)
-    
+    publisher=models.CharField(max_length=255, null=True,blank=True)
     cover_image = models.ImageField(
         upload_to='book_covers/',
         blank=True,

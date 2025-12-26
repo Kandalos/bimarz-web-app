@@ -19,7 +19,7 @@ export function Footer() {
         }}
       />
 
-      {/* Dark overlay for better text contrast */}
+      {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-[#2c1810]/95 via-[#3d2415]/90 to-[#4a2f1f]/85" />
 
       <div className="relative z-10 container mx-auto px-4 py-12">
@@ -31,7 +31,7 @@ export function Footer() {
               <span className="text-2xl font-bold text-wood-light">نشر بی‌مرز</span>
             </div>
             <p className="text-wood-light/80 text-center md:text-right leading-relaxed">
-              ناشر کتاب‌های ادبی و فرهنگی با بیش از ۲۰ سال تجربه در صنعت نشر
+              ناشر کتاب‌های بی‌مرز با بیش از ۲۰ سال تجربه در صنعت نشر
             </p>
           </div>
 
@@ -41,7 +41,10 @@ export function Footer() {
             <ul className="space-y-2">
               {navLinks.map((link) => (
                 <li key={link.href}>
-                  <a href={link.href} className="text-wood-light/80 hover:text-wood-light transition-colors">
+                  <a
+                    href={link.href}
+                    className="text-wood-light/80 hover:text-wood-light transition-colors"
+                  >
                     {link.label}
                   </a>
                 </li>
@@ -52,22 +55,45 @@ export function Footer() {
           {/* Social media */}
           <div className="flex flex-col items-center md:items-end">
             <h3 className="text-xl font-bold text-wood-light mb-4">شبکه‌های اجتماعی</h3>
-            <div className="flex gap-4">
+            <div className="flex gap-5">
               <a
                 href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-wood-light/80 hover:text-wood-light transition-colors"
+                aria-label="Instagram"
               >
                 <i className="lni lni-instagram text-3xl" />
               </a>
+
               <a
                 href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-wood-light/80 hover:text-wood-light transition-colors"
+                aria-label="YouTube"
               >
                 <i className="lni lni-youtube text-3xl" />
+              </a>
+
+              <a
+                href="https://t.me/your_channel"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-wood-light/80 hover:text-wood-light transition-colors"
+                aria-label="Telegram"
+              >
+                <i className="lni lni-telegram text-3xl" />
+              </a>
+
+              <a
+                href="https://facebook.com/your_page"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-wood-light/80 hover:text-wood-light transition-colors"
+                aria-label="Facebook"
+              >
+                <i className="lni lni-facebook-filled text-3xl" />
               </a>
             </div>
           </div>
@@ -78,9 +104,13 @@ export function Footer() {
           <div className="flex flex-col md:flex-row items-center justify-between gap-4">
             <div className="flex items-center gap-3">
               <img src="/license-logo.jpg" alt="License" className="w-8 h-8 opacity-80" />
-              <p className="text-wood-light/70 text-sm">تمامی حقوق محفوظ است © {new Date().getFullYear()}</p>
+              <p className="text-wood-light/70 text-sm">
+                تمامی حقوق محفوظ است © {new Date().getFullYear()}
+              </p>
             </div>
-            <p className="text-wood-light/70 text-sm">طراحی و توسعه با ❤️ توسط نشر بی‌مرز</p>
+            <p className="text-wood-light/70 text-sm">
+              طراحی و توسعه با ❤️ توسط نشر بی‌مرز
+            </p>
           </div>
         </div>
       </div>

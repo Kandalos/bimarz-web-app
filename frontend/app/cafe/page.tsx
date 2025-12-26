@@ -1,6 +1,6 @@
-import { Navbar } from "@/components/navbar"
-import { Footer } from "@/components/footer"
-import { Coffee, Book, Users, Heart } from "lucide-react"
+import { Navbar } from "@/components/navbar";
+import { Footer } from "@/components/footer";
+import { Coffee, Book, Users, Heart } from "lucide-react";
 
 export default function CafePage() {
   return (
@@ -19,8 +19,12 @@ export default function CafePage() {
         </div>
         <div className="relative h-full flex items-center justify-center text-center px-4">
           <div>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">کافه کتاب بی‌مرز</h1>
-            <p className="text-xl md:text-2xl text-white/90 max-w-2xl mx-auto">جایی که قهوه و کتاب در هم می‌آمیزند</p>
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-4">
+              کافه‌ کتاب شالپلاته
+            </h1>
+            <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto">
+              خانه‌ای برای فرهنگ، کتاب، موسیقی و دورهمی ایرانیان
+            </p>
           </div>
         </div>
       </div>
@@ -30,108 +34,98 @@ export default function CafePage() {
           {/* About Cafe */}
           <div className="mb-16">
             <div className="bg-white rounded-lg border-2 border-wood-light/40 p-8 md:p-12 wood-texture">
-              <h2 className="text-3xl md:text-4xl font-bold text-wood-dark mb-6 text-center">درباره کافه ما</h2>
-              <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-4">
+              <h2 className="text-3xl md:text-4xl font-bold text-wood-dark mb-6 text-center">
+                ما که هستیم
+              </h2>
+
+              <div className="prose prose-lg max-w-none text-muted-foreground leading-relaxed space-y-5">
                 <p>
-                  کافه کتاب بی‌مرز، فضایی است دنج و آرام که در آن می‌توانید با یک فنجان قهوه معطر، در دنیای کتاب‌ها غرق
-                  شوید. ما باور داریم که بهترین لحظات زندگی، آن‌هایی هستند که با یک کتاب خوب و یک نوشیدنی دلچسب سپری
-                  می‌شوند.
+                  کافه‌ کتاب شالپلاته در سال ۲۰۱۷ به مدیریت پدرام فرهادی‌فر افتتاح
+                  شد؛ با ایده‌ای ساده اما دوراندیشانه: ایجاد فضایی فرهنگی با
+                  محوریت تدریس موسیقی و گردهمایی ایرانی‌ها و دوست‌داران فرهنگ و
+                  هنر.
                 </p>
+
                 <p>
-                  کافه ما با طراحی گرم و دلنشین، قفسه‌های پر از کتاب‌های منتخب، و فضایی آرام برای مطالعه و گفتگو، مکانی
-                  ایده‌آل برای کتاب‌دوستان و علاقه‌مندان به فرهنگ است. چه به تنهایی بیایید و چه با دوستان، ما آماده‌ایم تا
-                  تجربه‌ای به‌یادماندنی برای شما خلق کنیم.
+                  از همان ابتدا، کافه‌ شالپلاته به محلی برای اجرای کنسرت‌های کوچک،
+                  برنامه‌های هنری و رویدادهای فرهنگی تبدیل شد و خیلی زود مورد
+                  استقبال گسترده‌ی ایرانیان مقیم کلن-آلمان قرار گرفت. برنامه‌هایی
+                  مانند داستان‌خوانی، نمایشنامه‌خوانی، رونمایی کتاب، نمایش فیلم،
+                  اجراهای موسیقی زنده، استندآپ کمدی و سایر رویدادهای هنری متنوع،
+                  هویت این فضا را شکل دادند.
                 </p>
+
                 <p>
-                  در کنار قهوه‌های تخصصی و نوشیدنی‌های متنوع، ما میزبان رویدادهای فرهنگی، باشگاه کتاب‌خوانی، و نشست‌های ادبی
-                  هستیم. کافه بی‌مرز، بیش از یک کافه است؛ جامعه‌ای از اهل فکر و فرهنگ است.
+                  به‌تدریج کافه کتاب شالپلاته جایگاه خود را نه‌تنها در شهر کلن،
+                  بلکه در سراسر اروپا پیدا کرد؛ به‌گونه‌ای که امروز به یکی از
+                  توقف‌گاه‌های مهم هنرمندان و فعالان فرهنگی ایرانی تبدیل شده است.
+                </p>
+
+                <p>
+                  در کنار این فعالیت‌ها، بخش کتاب‌فروشی نیز در سال ۲۰۱۹
+                  راه‌اندازی شد؛ و از آن زمان تا امروز می‌توانید کتاب دلخواه‌تان
+                  را بردارید، ورق بزنید و بخوانید. همچنین تازه‌ترین نشریات و
+                  مجلات روز ایران نیز همیشه در دسترس هستند.
+                </p>
+
+                <p>
+                  در کافه‌ کتاب شالپلاته کافی‌ست قهوه، دم‌نوش یا عرقیجاتی که
+                  مستقیم از ایران می‌رسد را سفارش دهید تا بتوانید ساعت‌ها در
+                  فضایی صمیمی بنشینید، کتاب بخوانید، موسیقی گوش دهید و از محیطی
+                  آرام و فرهنگی لذت ببرید. اینجا فقط یک کافه نیست؛
+                  <strong> خانه‌ی ما در غربت است.</strong>
                 </p>
               </div>
             </div>
           </div>
 
           {/* Features */}
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="bg-white rounded-lg border-2 border-wood-light/40 p-6 wood-texture text-center">
               <div className="bg-wood-light/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Coffee className="w-8 h-8 text-wood-medium" />
               </div>
-              <h3 className="font-bold text-wood-dark mb-2">قهوه تخصصی</h3>
-              <p className="text-sm text-muted-foreground">بهترین دانه‌های قهوه از سراسر جهان</p>
+              <h3 className="font-bold text-wood-dark mb-2">
+                کافه‌ای صمیمی
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                قهوه، دم‌نوش و نوشیدنی‌هایی با حال‌وهوای خانه
+              </p>
             </div>
 
             <div className="bg-white rounded-lg border-2 border-wood-light/40 p-6 wood-texture text-center">
               <div className="bg-wood-light/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Book className="w-8 h-8 text-wood-medium" />
               </div>
-              <h3 className="font-bold text-wood-dark mb-2">کتابخانه غنی</h3>
-              <p className="text-sm text-muted-foreground">هزاران کتاب در دسترس برای مطالعه</p>
+              <h3 className="font-bold text-wood-dark mb-2">
+                کتاب و نشریات
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                کتاب‌فروشی فعال با تازه‌ترین کتاب‌ها و مجلات فارسی
+              </p>
             </div>
 
             <div className="bg-white rounded-lg border-2 border-wood-light/40 p-6 wood-texture text-center">
               <div className="bg-wood-light/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Users className="w-8 h-8 text-wood-medium" />
               </div>
-              <h3 className="font-bold text-wood-dark mb-2">رویدادهای فرهنگی</h3>
-              <p className="text-sm text-muted-foreground">نشست‌های ادبی و باشگاه کتاب‌خوانی</p>
+              <h3 className="font-bold text-wood-dark mb-2">
+                رویدادهای فرهنگی
+              </h3>
+              <p className="text-sm text-muted-foreground">
+                کنسرت، کتاب‌خوانی، فیلم، نمایشنامه و اجراهای زنده
+              </p>
             </div>
 
             <div className="bg-white rounded-lg border-2 border-wood-light/40 p-6 wood-texture text-center">
               <div className="bg-wood-light/50 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                 <Heart className="w-8 h-8 text-wood-medium" />
               </div>
-              <h3 className="font-bold text-wood-dark mb-2">فضای دلنشین</h3>
-              <p className="text-sm text-muted-foreground">محیطی آرام و الهام‌بخش</p>
-            </div>
-          </div>
-
-          {/* Menu Highlights */}
-          <div className="bg-white rounded-lg border-2 border-wood-light/40 p-8 md:p-12 wood-texture">
-            <h2 className="text-3xl md:text-4xl font-bold text-wood-dark mb-8 text-center">منوی ویژه</h2>
-            <div className="grid md:grid-cols-2 gap-8">
-              <div>
-                <h3 className="text-xl font-bold text-wood-medium mb-4">نوشیدنی‌های گرم</h3>
-                <ul className="space-y-3">
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">اسپرسو</span>
-                    <span className="text-muted-foreground">۳۵,۰۰۰ تومان</span>
-                  </li>
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">کاپوچینو</span>
-                    <span className="text-muted-foreground">۴۵,۰۰۰ تومان</span>
-                  </li>
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">لاته</span>
-                    <span className="text-muted-foreground">۵۰,۰۰۰ تومان</span>
-                  </li>
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">موکا</span>
-                    <span className="text-muted-foreground">۵۵,۰۰۰ تومان</span>
-                  </li>
-                </ul>
-              </div>
-
-              <div>
-                <h3 className="text-xl font-bold text-wood-medium mb-4">نوشیدنی‌های سرد</h3>
-                <ul className="space-y-3">
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">آیس لاته</span>
-                    <span className="text-muted-foreground">۵۵,۰۰۰ تومان</span>
-                  </li>
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">فراپوچینو</span>
-                    <span className="text-muted-foreground">۶۰,۰۰۰ تومان</span>
-                  </li>
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">آیس آمریکانو</span>
-                    <span className="text-muted-foreground">۴۵,۰۰۰ تومان</span>
-                  </li>
-                  <li className="flex justify-between items-center">
-                    <span className="text-wood-dark">شیک شکلات</span>
-                    <span className="text-muted-foreground">۵۵,۰۰۰ تومان</span>
-                  </li>
-                </ul>
-              </div>
+              <h3 className="font-bold text-wood-dark mb-2">
+گالری              </h3>
+              <p className="text-sm text-muted-foreground">
+                جایی برای بودن، گفتگو، شنیدن و احساس تعلق
+              </p>
             </div>
           </div>
         </div>
@@ -139,5 +133,5 @@ export default function CafePage() {
 
       <Footer />
     </main>
-  )
+  );
 }
