@@ -8,8 +8,16 @@ backend/*.sqlite3
 backend/db.sqlite3
 backend/*.log
 backend/project/settings.py
+
 # Ignore Django local settings or env files
 backend/.env
+backend/settings.py
+
+# Ignore Dockerfiles
+backend/Dockerfiles
+frontend/Dockerfiles
+nginx/default.conf
+docker-compose.yml
 
 # Django static/media (optional)
 backend/staticfiles/
