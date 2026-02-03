@@ -7,13 +7,6 @@ with Docker-based deployment.
 
 ---
 
-## 🚀 Live Demo
-> https://bimarz.org
-
-Access the production instance to explore UI workflows and admin features.
-
----
-
 ## 🧠 Overview
 
 Bimarz (working title) is designed as a **modern content management platform** focused on
